@@ -6,7 +6,7 @@
   gather_facts: no
   tasks:
     - copy:
-        src: /tmp/foldersourse/filesourse
+        src: /tmp/dirsourse/filesourse
         dest: /tmp
         owner: root
         group: root
