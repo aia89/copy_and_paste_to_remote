@@ -1,0 +1,15 @@
+---  #This playbook will copy and paste sourse
+- hosts: all
+  connection: ssh
+  become: yes
+  become_method: sudo
+  gather_facts: no
+  tasks:
+    - copy:
+        src: /tmp/foldersourse/filesourse
+        dest: /tmp
+        owner: root
+        group: root
+        mode: 0644    
+
+
